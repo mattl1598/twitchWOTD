@@ -1,5 +1,5 @@
 var clientId = 'yh8h3dbxjsthjgm7bux5ckbrs73feg';
-var redirectURI = "http://localhost:8000/";
+var redirectURI = window.location.hostname;
 var scope = 'chat:read+channel:read:redemptions';
 var ws;
 
