@@ -1,0 +1,24 @@
+div.top-left, div.top-right {
+	height: 10vh;
+	width: 50vw;
+	background: white;
+}
+div.top-right textarea {
+	width: 100%;
+	height: 100%;
+}
+
+div.top {
+	display: flex;
+	flex-direction: row;
+}
+
+div.bottom {
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div#word {
+}

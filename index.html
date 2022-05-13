@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/index.css">
+        <title>Twitch PubSub Example</title>
+    </head>
+    <body>
+	    <div class="top">
+		    <div class="top-left">
+			    <h2 class="text-center">Twitch PubSub Example</h2>
+			    <label for="text">Text Colour:</label>
+			    <input name="text" type="color" value="#FFFFFF">
+
+			    <label for="bg">Background Colour:</label>
+			    <input name="bg" type="color">
+		    </div>
+		    <div class="top-right">
+			    <div style="display:none" class="auth" class="text-center">
+				    <p>First, connect with your Twitch Account:</p>
+				    <a id="auth-link"><img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png"/></a>
+			    </div>
+			    <div style="display:none" class="socket">
+				    <textarea class="ws-output" style="font-family:Courier;"></textarea>
+			    </div>
+		    </div>
+	    </div>
+        <div class="bottom">
+	        <div id="word"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/js/chat2.js"></script>
+        <script>
+        </script>
+    </body>
+</html>
