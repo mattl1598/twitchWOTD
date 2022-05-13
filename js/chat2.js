@@ -1,5 +1,5 @@
 var clientId = 'yh8h3dbxjsthjgm7bux5ckbrs73feg';
-var redirectURI = window.location.hostname;
+var redirectURI = "https://" + window.location.hostname;
 var scope = 'chat:read+channel:read:redemptions';
 var ws;
 
