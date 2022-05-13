@@ -105,17 +105,17 @@ function connect() {
 }
 
 function parseMsg(message){
-    // if (message.type === "reward-redeemed" &&
-    //     message.data.redemption.reward.title === "Word of the Day" &&
-    //     message.data.redemption.status === "FULFILLED"
-    // ) {
-        let word = message.replace(/<[^>]*>?/gm, '')
-        // let word = message.data.redemption.user_input.split(" ")[0].replace(/<[^>]*>?/gm, '');
+    if (message.type === "reward-redeemed" &&
+        message.data.redemption.reward.title === "Word of the Day" &&
+        message.data.redemption.status === "FULFILLED"
+    ) {
+        // let word = message.replace(/<[^>]*>?/gm, '')
+        let word = message.data.redemption.user_input.split(" ")[0].replace(/<[^>]*>?/gm, '');
         $("#word").text(word);
         $("#word").css({
             fontSize: "calc(100vw/"+word.length+")",
         });
-    // }
+    }
 }
 
 $(function() {
