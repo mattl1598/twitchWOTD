@@ -93,6 +93,7 @@ function connect() {
             $('.ws-output').append('INFO: Reconnecting...\n');
             setTimeout(connect, reconnectInterval);
         }
+        parseMsg(message)
         $('.ws-output').scrollTop($('.ws-output')[0].scrollHeight);
     };
 
